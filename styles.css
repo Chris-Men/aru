@@ -1,0 +1,146 @@
+/* Estilos Generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Fondo */
+.background-image {
+    background-image: url('imagenes/playa.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+/* Barra de Navegación - Fija en la parte superior y fondo transparente */
+.nav {
+    position: fixed; /* Hacer la barra estática */
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(51, 51, 51, 0.8); /* Fondo transparente con opacidad */
+    padding: 10px 0;
+    z-index: 10;
+}
+
+/* Estilo de los enlaces de la barra de navegación */
+.nav .dropdown {
+    position: relative;
+}
+
+.nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+
+.nav .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.nav .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #000000;
+    top: 100%;
+    left: 0;
+    min-width: 150px;
+    z-index: 1;
+}
+
+.nav .dropdown-menu a {
+    padding: 10px 15px;
+    border-bottom: 1px solid #555;
+}
+
+.nav .dropdown-menu a:hover {
+    background-color: #666;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-links a {
+    color: #fff;
+    font-size: 20px;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #ff6f61;
+}
+
+
+
+
+/* Secciones */
+.content {
+    padding: 20px;
+    margin-top: 100px; /* Ajustar el contenido para que no se superponga a la barra de navegación */
+    background-color: rgba(255, 255, 255, 0.6); /* Fondo semi-transparente */
+    backdrop-filter: blur(1px); /* Efecto de desenfoque en el fondo */
+    border-radius: 15px; /* Bordes redondeados */
+    width: 80vw; /* El ancho será el 80% del viewport */
+    height: 80vw; /* El alto será el mismo que el ancho para crear un cuadrado */
+    max-width: 1200px; /* Limitar el ancho máximo */
+    max-height: 600px; /* Limitar el alto máximo */
+    margin-left: auto; /* Centrado horizontal */
+    margin-right: auto; /* Centrado horizontal */ 
+    align-items: flex-start; /* Alineación del contenido al inicio del contenedor */
+    overflow-y: auto; /* Activar el scroll vertical si el contenido es más grande que el contenedor */
+    padding-right: 20px; /* Evitar que el contenido toque el borde derecho */
+}
+
+
+
+
+/* Títulos */
+.main-title {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+
+.text-box {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 1.1em;
+    line-height: 1.6;
+
+}
+
+/* Estilos para las secciones específicas */
+
+
+
+/* Estilos para los elementos <n> */
+n {
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+/* Estilos para el pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+footer .container {
+    font-size: 1.1em;
+}
